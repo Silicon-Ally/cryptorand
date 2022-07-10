@@ -4,6 +4,8 @@ policy here](https://siliconally.org/policies/open-source/)._
 
 # cryptorand
 
+[![GoDoc](https://pkg.go.dev/badge/github.com/Silicon-Ally/cryptorand?status.svg)](https://pkg.go.dev/github.com/Silicon-Ally/cryptorand?tab=doc)
+
 `cryptorand` is a simple, zero-dependency Go library that implements the
 `math/rand` package's `rand.Source` and `rand.Source64` interfaces backed by
 the `crypto/rand` package for cryptographically secure number generation.
