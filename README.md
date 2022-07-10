@@ -1,3 +1,7 @@
+_This package brought to you by [Adventure
+Scientists](https://adventurescientists.org). Read more about [our open source
+policy here](https://siliconally.org/policies/open-source/)._
+
 # Cryptorand
 
 `cryptorand` is a simple, zero-dependency Go library that implements the
