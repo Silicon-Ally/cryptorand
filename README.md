@@ -2,7 +2,7 @@ _This package brought to you by [Adventure
 Scientists](https://adventurescientists.org). Read more about [our open source
 policy here](https://siliconally.org/policies/open-source/)._
 
-# Cryptorand
+# cryptorand
 
 `cryptorand` is a simple, zero-dependency Go library that implements the
 `math/rand` package's `rand.Source` and `rand.Source64` interfaces backed by
@@ -25,3 +25,20 @@ func main() {
   fmt.Println(r.Intn(10))
 }
 ```
+
+## Panicking Behavior
+
+Generally, Go libraries should avoid panicking except in extreme circumstances,
+opting instead to return an error. `*cryptorand.Source` may panic if the
+underlying call to `crypto/rand.Read` fails, [which can happen for different
+reasons on different
+platforms](https://cs.opensource.google/go/go/+/refs/tags/go1.18.3:src/crypto/rand/).
+Because the `math/rand.Source` interface doesn't expose an `error` in the
+response, we opt to panic loudly instead of silently failing, as a lack of
+randomness can manifest as security vulnerabilities.
+
+## Security
+
+Please report security issues to security@siliconally.org, or by using one of
+the contact methods available on our [Contact Us
+page](https://siliconally.org/contact/).
