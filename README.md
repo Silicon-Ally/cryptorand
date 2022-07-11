@@ -1,6 +1,7 @@
-_This package brought to you by [Adventure
-Scientists](https://adventurescientists.org). Read more about [our open source
-policy here](https://siliconally.org/policies/open-source/)._
+_This package was developed by [Silicon Ally](https://siliconally.org) while
+working on a project for  [Adventure Scientists](https://adventurescientists.org).
+Many thanks to Adventure Scientists for supporting [our open source
+mission](https://siliconally.org/policies/open-source/)!_
 
 # cryptorand
 
